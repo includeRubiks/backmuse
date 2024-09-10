@@ -6,3 +6,5 @@ Also the name is cause I'm gen-alpha.
 ## Noob's guide
 Clone this repo using the url above but add ".git" at the end. Put the mp3s in the mp3s folder and run main.py for
 Gyatify.
+## Note
+Delete mp3s/deleteme.txt ASAP, as it is a placeholder to let github know that the mp3s folder exists
