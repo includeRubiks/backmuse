@@ -33,7 +33,13 @@ while True:
 					playing = False
 					pygame.mixer.music.stop()
 		if event.type == pygame.USEREVENT+0:
-			playing = False
+			if playing != False:
+				if (selection + 1) > (len(songfiles)-1):
+					selection = 0
+				else:
+					selection += 1
+				pygame.mixer.music.load(f'mp3s/{songfiles[selection]}')
+				pygame.mixer.music.play()
 	
 	screen.fill('black')
 	
